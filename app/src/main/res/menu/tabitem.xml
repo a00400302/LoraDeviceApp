@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@mipmap/devices" android:id="@+id/devices" android:title="@string/devices" />
+    <item android:icon="@mipmap/scenes" android:id="@+id/scenes" android:title="@string/scenes" />
+    <item android:icon="@mipmap/mysetting" android:id="@+id/mysetting" android:title="@string/mysetting" />
+</menu>

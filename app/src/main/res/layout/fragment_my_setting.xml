@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffefefef" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="140.0dip">
+        <ImageView android:id="@+id/userImage" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="30.0dip" android:src="@mipmap/mysetting" android:layout_centerVertical="true" />
+        <TextView android:textSize="28.0sp" android:textColor="@color/black" android:id="@+id/userName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="宇信科技" android:layout_toRightOf="@+id/userImage" android:layout_alignTop="@+id/userImage" />
+        <TextView android:textSize="10.0sp" android:id="@+id/userStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1个家庭,6个设备" android:layout_below="@+id/userName" android:layout_alignLeft="@+id/userName" />
+        <ImageView android:id="@+id/Setting" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="30.0dip" android:src="@mipmap/setting" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/homeManger" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="15.0dip">
+        <ImageView android:id="@+id/homeImg" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="20.0dip" android:src="@mipmap/setting" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="家庭管理" android:layout_toRightOf="@+id/homeImg" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/moreButton" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="15.0dip">
+        <ImageView android:id="@+id/settingImg" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="20.0dip" android:src="@mipmap/setting" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="更多" android:layout_toRightOf="@+id/settingImg" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

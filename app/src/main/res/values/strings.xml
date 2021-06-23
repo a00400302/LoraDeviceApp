@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="devices" >设备</string>
+    <string name="scenes" >场景</string>
+    <string name="mysetting"  >我的</string>
+    <string name="app_name">智能灯控</string>
+</resources>

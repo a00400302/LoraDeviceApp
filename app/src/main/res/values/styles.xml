@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyTabLayoutTextAppearance" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">19.0sp</item>
+    </style>
+    <style name="MyTabLayoutTextAppearanceInverse" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">15.0sp</item>
+    </style>
+
+    <style name="Theme.LoraDevicesApp" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryDark</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryDark</item>
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+    <style name="bottom_tab_title_active">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="bottom_tab_title_inactive">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+
+</resources>

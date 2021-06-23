@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <com.yxkj.loradeviceapp.TitleView
+        android:id="@id/titleView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:isShowSetting="true"
+        app:title="灯"
+        app:titleColor="@color/white" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/titleView"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        app:cardBackgroundColor="#52ffffff"
+        app:cardCornerRadius="5.0dip"
+        app:cardElevation="0.0dip"
+        app:contentPadding="10.0dip" />
+
+    <com.king.view.arcseekbar.ArcSeekBar
+        android:id="@id/arcSeekBar"
+        android:layout_width="250.0dip"
+        android:layout_height="250.0dip"
+        android:layout_below="@id/titleView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10.0dip"
+        app:arcLabelPaddingTop="0.0dip"
+        app:arcLabelTextColor="@color/white"
+        app:arcNormalColor="#6b03dac5"
+        app:arcProgressColor="#ff00ffe5"
+        app:arcStartAngle="145"
+        app:arcStrokeWidth="25.0dip"
+        app:arcSweepAngle="250"
+        app:arcThumbColor="@color/colorPrimary"
+        app:arcThumbRadius="9.0dip" />
+
+    <TextView
+        android:id="@id/modeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250.0dip"
+        android:text="冷色"
+        android:textColor="@color/white"
+        android:textSize="25.0sp" />
+
+    <Button
+        android:id="@id/minus_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modeText"
+        android:layout_marginLeft="70.0dip"
+        android:text="减档" />
+
+    <Button
+        android:id="@id/add_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modeText"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="70.0dip"
+        android:text="加档" />
+
+    <Button
+        android:id="@id/swipeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/buttonLayout"
+        android:layout_below="@id/add_light"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:background="@drawable/dash_line"
+        android:layerType="software"
+        android:text="滑动触控区"
+        android:textSize="18.0sp" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@id/buttonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="90.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="20.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@id/buttonSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="30.0dip"
+            app:cardBackgroundColor="@color/button_enable"
+            app:cardCornerRadius="15.0dip"
+            app:cardElevation="0.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70.0dip"
+                    android:layout_height="60.0dip"
+                    android:contentDescription="开关"
+                    android:src="@mipmap/button_switch" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="开关"
+                    android:textColor="@color/white"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@id/buttonBrightness"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="30.0dip"
+            app:cardBackgroundColor="@color/button_enable"
+            app:cardCornerRadius="15.0dip"
+            app:cardElevation="0.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70.0dip"
+                    android:layout_height="60.0dip"
+                    android:contentDescription="亮度"
+                    android:src="@mipmap/brightness" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="亮度"
+                    android:textColor="@color/white"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@id/buttonTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            app:cardBackgroundColor="@color/button_enable"
+            app:cardCornerRadius="15.0dip"
+            app:cardElevation="0.0dip">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="70.0dip"
+                    android:layout_height="60.0dip"
+                    android:contentDescription="色温"
+                    android:src="@mipmap/color_temperature" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="色温"
+                    android:textColor="@color/white"
+                    android:textSize="18.0sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

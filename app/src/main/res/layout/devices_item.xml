@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/cardView" android:layout_width="160.0dip" android:layout_height="190.0dip" android:layout_marginBottom="15.0dip" app:cardCornerRadius="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.LinearLayoutCompat android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="15.0dip">
+        <ImageView android:id="@+id/deviceIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/devices" />
+        <TextView android:textSize="30.0sp" android:id="@+id/deviceType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="asdf" />
+        <TextView android:id="@+id/deviceName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="asdf" />
+        <androidx.appcompat.widget.SwitchCompat android:id="@+id/deviceControl" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.cardview.widget.CardView>

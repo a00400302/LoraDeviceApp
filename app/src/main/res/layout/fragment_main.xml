@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffefefef"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80.0dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_weight="1.0"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30.0dip"
+                android:layout_height="fill_parent"
+                android:src="@mipmap/devices" />
+
+            <TextView
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:text="设备"
+                android:textColor="#ff000000"
+                android:textSize="30.0sp" />
+
+            <ImageView
+                android:layout_width="20.0dip"
+                android:layout_height="20.0dip"
+                android:layout_gravity="center"
+                android:layout_marginRight="20.0dip"
+                android:src="@mipmap/add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@id/weather"
+            android:layout_width="fill_parent"
+            android:layout_height="80.0dip"
+            android:layout_marginTop="10.0dip"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@id/refreshLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@id/havedeviceLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@id/scenesLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150.0dip"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:text="场景"
+                        android:textColor="#ff000000"
+                        android:textSize="19.0sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@id/sceneslist"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/devicesLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="10.0dip"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_marginRight="15.0dip"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.tabs.TabLayout
+                            android:id="@id/tablayout"
+                            android:layout_width="0.0dip"
+                            android:layout_height="33.0dip"
+                            android:layout_weight="1.0"
+                            android:background="#00000000"
+                            app:tabIndicatorColor="@color/black"
+                            app:tabIndicatorFullWidth="false"
+                            app:tabMode="scrollable"
+                            app:tabSelectedTextColor="@color/black"
+                            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                            app:tabTextColor="#ffa7a6b4" />
+
+                        <ImageView
+                            android:id="@id/comboSetting"
+                            android:layout_width="24.0dip"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/othersetting" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@id/viewPager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@id/nodevicesLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@id/addDevices"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60.0dip"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="15.0dip"
+                    app:cardCornerRadius="5.0dip"
+                    app:cardElevation="0.0dip">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="18.0dip"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="5.0dip"
+                            android:src="@mipmap/add" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text="添加设备"
+                            android:textColor="#ff000000"
+                            android:textSize="18.0sp" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.cardview.widget.CardView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

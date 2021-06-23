@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A4E8E1</color>
+    <color name="colorPrimaryDark">#2DAA9D</color>
+    <color name="colorAccent">#03DAC5</color>
+
+
+    <color name="colorgray">#CBD8D7</color>
+    <color name="overlay_light">#F8F8F8</color>
+    <color name="dialogplus_card_shadow">#D4D4D4</color>
+    <color name="dialogplus_black_overlay">#60000000</color>
+
+
+    <color name="green">#03DAC5</color>
+    <color name="red">#F31B35</color>
+    <color name="white">#FFFFFF</color>
+    <color name="button_enable">#03DAC5</color>
+    <color name="black">#000000</color>
+
+</resources>
